@@ -1,0 +1,163 @@
+body::before {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: auto;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/hospital0.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+.Contenedor-informacion {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.Contenedor-informacion .informacion-usuario{
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Contenedor-informacion .informacion-hospital {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Contenedor-informacion .informacion-usuario h2{
+    font-size: 24px;
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+
+.Contenedor-informacion .informacion-hospital h2 {
+    font-size: 24px;
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+
+.informacion-usuario p {
+    font-size: 20px;
+    color: black;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.informacion-hospital p {
+    font-size: 20px;
+    color: black;
+    margin: 5px 0;
+    text-align: justify;
+}
+
+form {
+    text-align: center;
+    margin: auto;
+}
+
+form button {
+    padding: 10px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%, 
+        rgba(128, 0, 0, 1) 100%
+    );
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: rgba(128, 0, 0, 1);
+}
+
+.carrusel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+}
+
+.carrusel img {
+    width: 100%; 
+    height: auto;
+    display: none;
+    margin: 15px;
+}
+.opciones {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.opciones h2 {
+    color: black;
+    font-size: 26px;
+    text-align: center;
+}
+
+.icono-btn {
+    background-color: #355691; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 50%; /* Hace que el botón sea redondeado */
+    font-size: 20px;
+    padding: 25px;
+    margin: 20px; /* Espaciado entre botones */
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.icono-btn:hover {
+    background-color: #192BC2; /* Cambia el color de fondo al pasar el ratón */
+}
+
+
+footer {
+    text-align: center;
+    margin: 0;
+}
+
+footer p {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    margin: 0;
+}
